@@ -35,7 +35,7 @@
   border-radius: 10px;
   padding: 30px;
   height: 100%;
-  background-color: #4d5060;
+  background-color: #4a5e85;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 .formtitle {
@@ -67,6 +67,7 @@
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 25px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   transition: all 0.2s ease-in-out;
 }
 .input:hover {
@@ -141,6 +142,7 @@
   padding: 15px 30px;
   cursor: pointer;
   width: 400px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   transition: all 0.2s ease-in-out;
 }
 .button-add:hover {
