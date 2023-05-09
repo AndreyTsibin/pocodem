@@ -3,9 +3,8 @@
       <p class="copyright"> © 2023 Все права защищены | Pokodem</p>
     </footer>
   </div>
-
-  <script src="./scripts/script.js"></script>
-  <script src="./scripts/prism.js"></script>
+  
+  <?php wp_footer(); ?>
 </body>
 
 </html>
