@@ -1,14 +1,15 @@
 //Функция которая делать ссылку в меню активной
-function highlightActiveMenuItem() {
-  var currentUrl = window.location.href;
-  var menuLinks = document.querySelectorAll('nav a');
+let currentUrl = window.location.href.slice(0, -1);
+let menuLinks = document.querySelectorAll('.menu__link');
 
+function highlightActiveMenuItem() {
   menuLinks.forEach(function (link) {
     if (link.href === currentUrl) {
       link.classList.add('menu__link-active');
     }
   });
 }
+
 window.addEventListener('load', function () {
   highlightActiveMenuItem();
 });
