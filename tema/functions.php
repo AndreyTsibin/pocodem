@@ -7,6 +7,10 @@ add_action( 'wp_enqueue_scripts', function () {
 	wp_enqueue_style( 'prism', get_template_directory_uri() . '/assets/styles/prism.css' );
   wp_enqueue_style( 'post', get_template_directory_uri() . '/assets/styles/post.css' );
   wp_enqueue_style( 'political', get_template_directory_uri() . '/assets/styles/style-gen-politica.css' );
+//Подключаем стили для страницы контакты
+  if( is_page( 'kontakty' ) ){
+    wp_enqueue_style( 'contact', get_template_directory_uri() . '/assets/styles/contact-forma.css' );
+}
 
   wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/scripts/script.js', array('jquery'), '1.0.0', true );
   wp_enqueue_script( 'prism-script', get_template_directory_uri() . '/assets/scripts/prism.js', array('jquery'), '1.0.0', true );
