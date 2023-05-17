@@ -17,26 +17,29 @@ Template Name: tilda
       <section class="main__content">
         <div class="main__content-card-list">
 
-          <div class="searchable">
+        <?php global $post;
+
+        $myposts = get_posts([ 
+	        'numberposts' => -1,
+        ]);
+
+        if( $myposts ){
+	      foreach( $myposts as $post ){
+		      setup_postdata( $post ); ?>
+
+            <div class="searchable">
             <a class="main__content-card" href="#">
-              <img class="main__content-img" src="<?php bloginfo('template_url'); ?>/assets/images/timg1.svg" alt="Тильда">
-              <h3 class="main__card-title">Как сделать фиксированное меню в Zero Block?</h3>
+            <?php the_post_thumbnail( 
+              array(306, 108),
+              array('class' => 'main__content-img',) 
+              ); ?>
+              <!-- <img class="main__content-img" src="<?php bloginfo('template_url'); ?>/assets/images/timg1.svg" alt="Тильда"> -->
+              <h3 class="main__card-title"><?php the_title(); ?></h3>
             </a>
           </div>
 
-          <div class="searchable">
-            <a class="main__content-card" href="#">
-              <img class="main__content-img" src="<?php bloginfo('template_url'); ?>/assets/images/timg2.svg" alt="Тильда">
-              <h3 class="main__card-title">Как скруглить углы у стандартного pop-up на Тильде</h3>
-            </a>
-          </div>
-
-          <div class="searchable">
-            <a class="main__content-card" href="#">
-              <img class="main__content-img" src="<?php bloginfo('template_url'); ?>/assets/images/timg3.svg" alt="Тильда">
-              <h3 class="main__card-title">Как заменить цвета шапки в Zero блок по скроллу на Тильде</h3>
-            </a>
-          </div>
+		    <?php } } 
+        wp_reset_postdata(); ?>
 
         </div>
       </section>
