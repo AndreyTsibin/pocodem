@@ -22,7 +22,7 @@ Template Name: javascript
 
 $myposts = get_posts([ 
 'numberposts' => -1,
-'category_name' => 'tilda',
+'category_name' => 'javascript',
 ]);
 
 if( $myposts ){
@@ -31,7 +31,7 @@ setup_postdata( $post ); ?>
 
 <!-- Разметка поста -->
 <div class="searchable">
-<a class="main__content-card" href="<?php the_field('link_to_tilda'); ?>">
+<a class="main__content-card" href="<?php the_field('link_to_js'); ?>">
 
 <?php the_post_thumbnail( 
 array(306, 108),

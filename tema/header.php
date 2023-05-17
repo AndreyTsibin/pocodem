@@ -125,7 +125,7 @@
           </svg>
           <span>JavaScript</span>
         </a>
-        <a class="menu__link" href="./pages/generator.html">
+        <a class="menu__link" href="<?php echo home_url( 'generatory' ); ?>">
           <svg width="24" height="16" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_143_9)">
               <path
@@ -247,7 +247,7 @@
           </svg>
           <span>JavaScript</span>
         </a>
-        <a class="menu__link" href="./pages/generator.html">
+        <a class="menu__link" href="<?php echo home_url( 'generatory' ); ?>">
           <svg width="24" height="16" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_143_9)">
               <path
