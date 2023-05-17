@@ -16,25 +16,27 @@ Template Name: tilda
       <!-- Тильда -->
       <section class="main__content">
         <div class="main__content-card-list">
-
+      <!-- добавляем посты тильды -->
         <?php global $post;
-
+         // Задаем количество постов для отображения и задаем рубрику
         $myposts = get_posts([ 
 	        'numberposts' => -1,
+          'category_name' => 'tilda',
         ]);
-
+        //Тело поста
         if( $myposts ){
 	      foreach( $myposts as $post ){
 		      setup_postdata( $post ); ?>
-
+          <!-- Разметка поста -->
             <div class="searchable">
-            <a class="main__content-card" href="#">
+            <a class="main__content-card" href="<?php the_field('link_to_tilda'); ?>">
+
             <?php the_post_thumbnail( 
               array(306, 108),
               array('class' => 'main__content-img',) 
               ); ?>
-              <!-- <img class="main__content-img" src="<?php bloginfo('template_url'); ?>/assets/images/timg1.svg" alt="Тильда"> -->
               <h3 class="main__card-title"><?php the_title(); ?></h3>
+
             </a>
           </div>
 
