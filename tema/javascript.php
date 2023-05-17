@@ -1,0 +1,49 @@
+<?php
+/*
+Template Name: javascript
+*/
+?>
+<?php get_header(); ?>
+
+<!-- Content -->
+<main class="content">
+<!-- Обложка главной -->
+<section class="main__slider-pages" style="background-color: rgb(116, 79, 157);">
+<img class="main__logo-pages" src="<?php bloginfo('template_url'); ?>/assets/images/js.svg" alt="JavaScript логотип">
+<h1 class="main__slider-title">JavaScript - Библиотека готовых решений</h1>
+</section>
+
+<!-- JavaScript -->
+<section class="main__content">
+<div class="main__content-card-list">
+
+<!-- добавляем посты -->
+<?php global $post;
+
+$myposts = get_posts([ 
+'numberposts' => -1,
+'category_name' => 'tilda',
+]);
+
+if( $myposts ){
+foreach( $myposts as $post ){
+setup_postdata( $post ); ?>
+
+<!-- Разметка поста -->
+<div class="searchable">
+<a class="main__content-card" href="<?php the_field('link_to_tilda'); ?>">
+
+<?php the_post_thumbnail( 
+array(306, 108),
+array('class' => 'main__content-img',) 
+); ?>
+<h3 class="main__card-title"><?php the_title(); ?></h3>
+</a>
+</div>
+
+<?php } } wp_reset_postdata(); ?>
+</div>
+</section>
+</main>
+
+<?php get_footer();?>

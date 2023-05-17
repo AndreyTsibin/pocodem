@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="<html <?php language_attributes(); ?>>">
+<html <?php language_attributes(); ?>>
 
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-<?php wp_head(); ?>
 
+<?php wp_head(); ?>
+  
   <title>POKODEM - инструменты для разработки веб-сайтов</title>
 </head>
 
@@ -39,7 +39,7 @@
       <div class="header__mobile-menu">
         <!-- Логотип мобильного меню -->
         <div class="menu__logo">
-          <a href="index.html">
+          <a href="/">
             <svg width="126" height="24" viewBox="0 0 126 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_122_12)">
                 <g clip-path="url(#clip1_122_12)">
@@ -93,7 +93,7 @@
       </div>
       <!-- Мобильное меню ссылки -->
       <nav class="mobile-menu">
-        <a class="menu__link" href="./pages/tilda.html">
+        <a class="menu__link" href="<?php echo home_url( 'tilda' ); ?>">
           <svg width="24" height="16" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_143_4)">
               <path d="M5.74121 19V4.26143H0V0H16.743V4.26143H11.0285V19H5.74121Z" fill="white" />
@@ -107,7 +107,7 @@
           </svg>
           <span>Тильда</span>
         </a>
-        <a class="menu__link" href="./pages/javascript.html">
+        <a class="menu__link" href="<?php echo home_url( 'javascript' ); ?>">
           <svg width="24" height="16" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_143_7)">
               <path
@@ -167,7 +167,7 @@
     <aside class="menu__container">
       <!-- Логотип -->
       <div class="menu__logo">
-        <a href="index.html">
+        <a href="/">
           <svg width="126" height="24" viewBox="0 0 126 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_122_12)">
               <g clip-path="url(#clip1_122_12)">
@@ -215,7 +215,7 @@
       </div>
       <!-- Ссылки -->
       <nav class="menu">
-        <a class="menu__link" href="./pages/tilda.html">
+        <a class="menu__link" href="<?php echo home_url( 'tilda' ); ?>">
           <svg width="24" height="16" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_143_4)">
               <path d="M5.74121 19V4.26143H0V0H16.743V4.26143H11.0285V19H5.74121Z" fill="white" />
@@ -229,7 +229,7 @@
           </svg>
           <span>Тильда</span>
         </a>
-        <a class="menu__link" href="./pages/javascript.html">
+        <a class="menu__link" href="<?php echo home_url( 'javascript' ); ?>">
           <svg width="24" height="16" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_143_7)">
               <path

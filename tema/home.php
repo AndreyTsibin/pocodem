@@ -16,10 +16,10 @@ Template Name: home
       <!-- Тильда -->
       <section class="main__content">
         <div class="main__content-header">
-          <a class="main__content-title" href="./pages/tilda.html">
+          <a class="main__content-title" href="<?php echo home_url( 'tilda' ); ?>">
             <h2>Тильда</h2>
           </a>
-          <a class="main__link" href="./pages/tilda.html">Показать все</a>
+          <a class="main__link" href="<?php echo home_url( 'tilda' ); ?>">Показать все</a>
         </div>
         <div class="main__content-card-list">
 
@@ -49,10 +49,10 @@ Template Name: home
       <!-- JavaScript -->
       <section class="main__content">
         <div class="main__content-header">
-          <a class="main__content-title" href="pages/javascript.html">
+          <a class="main__content-title" href="<?php echo home_url( 'javascript' ); ?>">
             <h2>JavaScript</h2>
           </a>
-          <a class="main__link" href="pages/javascript.html">Показать все</a>
+          <a class="main__link" href="<?php echo home_url( 'javascript' ); ?>">Показать все</a>
         </div>
         <div class="main__content-card-list">
 

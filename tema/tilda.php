@@ -16,14 +16,15 @@ Template Name: tilda
       <!-- Тильда -->
       <section class="main__content">
         <div class="main__content-card-list">
+
       <!-- добавляем посты тильды -->
         <?php global $post;
-         // Задаем количество постов для отображения и задаем рубрику
+
         $myposts = get_posts([ 
 	        'numberposts' => -1,
           'category_name' => 'tilda',
         ]);
-        //Тело поста
+
         if( $myposts ){
 	      foreach( $myposts as $post ){
 		      setup_postdata( $post ); ?>
@@ -38,6 +39,7 @@ Template Name: tilda
               <h3 class="main__card-title"><?php the_title(); ?></h3>
 
             </a>
+            
           </div>
 
 		    <?php } } 
