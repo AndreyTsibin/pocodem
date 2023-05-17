@@ -13,10 +13,16 @@ add_action( 'wp_enqueue_scripts', function () {
     wp_enqueue_style( 'contact', get_template_directory_uri() . '/assets/styles/contact-forma.css' );
 }
 
+//Подключаем скрипты
   wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/scripts/script.js', array('jquery'), '1.0.0', true );
   wp_enqueue_script( 'prism-script', get_template_directory_uri() . '/assets/scripts/prism.js', array('jquery'), '1.0.0', true );
   wp_enqueue_script( 'modal', get_template_directory_uri() . '/assets/scripts/modal.js', array('jquery'), '1.0.0', true);
 
+//Копируем код из инструкции
+if( is_single() ){
+  wp_enqueue_script( 'code', get_template_directory_uri() . '/assets/scripts/copy-code.js', array('jquery'), '1.0.0', true);
+}
+  
 });
 
 add_theme_support( 'post-thumbnails' );
