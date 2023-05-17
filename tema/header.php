@@ -29,7 +29,7 @@
       <!-- Результат поиска -->
       <div class="search__result" id="searchResults" style="display: none;"></div>
       <!-- Кнопка -->
-      <button class="news-btn" onclick="window.location.href='pages/news.html'"><svg width="18" height="18"
+      <button class="news-btn" onclick="window.location.href='<?php echo home_url( 'novosti' ); ?>'"><svg width="18" height="18"
           viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M8.99994 0C8.20541 0 7.55994 0.645469 7.55994 1.44C7.55994 2.23453 8.20541 2.88 8.99994 2.88C9.79447 2.88 10.4399 2.23453 10.4399 1.44C10.4399 0.645469 9.79447 0 8.99994 0ZM6.97494 2.19375C5.32963 2.89828 4.31994 4.48453 4.31994 6.48C4.31994 10.44 2.95166 11.4342 2.13744 12.0263C1.77604 12.2878 1.43994 12.5311 1.43994 12.96C1.43994 14.4745 3.70119 15.12 8.99994 15.12C14.2987 15.12 16.5599 14.4745 16.5599 12.96C16.5599 12.5311 16.2238 12.2878 15.8624 12.0263C15.0482 11.4342 13.6799 10.44 13.6799 6.48C13.6799 4.47891 12.6717 2.89688 11.0249 2.19375C10.717 3.01219 9.92385 3.6 8.99994 3.6C8.07604 3.6 7.28291 3.01078 6.97494 2.19375ZM6.83994 15.795C6.83994 15.8091 6.83994 15.8259 6.83994 15.84C6.83994 17.0311 7.80885 18 8.99994 18C10.191 18 11.1599 17.0311 11.1599 15.84C11.1599 15.8259 11.1599 15.8091 11.1599 15.795C10.4821 15.8231 9.76213 15.84 8.99994 15.84C8.23775 15.84 7.51775 15.8231 6.83994 15.795Z"
@@ -37,7 +37,7 @@
         </svg>Новости</button>
       <!-- Мобильное меню шапка-->
       <div class="header__mobile-menu">
-        <!-- Логотип мобильного меню -->
+        <!-- Логотип -->
         <div class="menu__logo">
           <a href="/">
             <svg width="126" height="24" viewBox="0 0 126 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -85,7 +85,7 @@
             </svg>
           </a>
         </div>
-        <!-- Иконка мобильного меню -->
+        <!-- Иконка меню -->
         <div class="mobile-menu-icon">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -142,7 +142,7 @@
             </defs>
           </svg>
           <span>Генератор</span></a>
-        <a class="menu__link" href="./pages/links.html">
+        <a class="menu__link" href="<?php echo home_url( 'ssylki' ); ?>">
           <svg width="24" height="16" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_143_11)">
               <path d="M0 19V0H5.87863V14.7386H15.7951V19H0Z" fill="white" />
@@ -157,8 +157,8 @@
           <span>Ссылки</span></a>
 
         <div class="menu__contact">
-          <a class="menu__contact-link" href="./pages/design.html">Разработка</a>
-          <a class="menu__contact-link" href="./pages/contacts.html">Контакты</a>
+          <a class="menu__contact-link" href="<?php echo home_url( 'razrabotka' ); ?>">Разработка</a>
+          <a class="menu__contact-link" href="<?php echo home_url( 'kontakty' ); ?>">Контакты</a>
         </div>
       </nav>
     </header>
@@ -264,7 +264,7 @@
             </defs>
           </svg>
           <span>Генератор</span></a>
-        <a class="menu__link" href="./pages/links.html">
+        <a class="menu__link" href="<?php echo home_url( 'ssylki' ); ?>">
           <svg width="24" height="16" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_143_11)">
               <path d="M0 19V0H5.87863V14.7386H15.7951V19H0Z" fill="white" />
@@ -280,7 +280,7 @@
       </nav>
       <!-- Контакты -->
       <div class="menu__contact">
-        <a class="menu__contact-link" href="./pages/design.html">Разработка</a>
-        <a class="menu__contact-link" href="./pages/contacts.html">Контакты</a>
+        <a class="menu__contact-link" href="<?php echo home_url( 'razrabotka' ); ?>">Разработка</a>
+        <a class="menu__contact-link" href="<?php echo home_url( 'kontakty' ); ?>">Контакты</a>
       </div>
     </aside>

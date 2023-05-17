@@ -12,7 +12,7 @@ Template Name: generator
         <h1 class="main__slider-title">Подборка генераторов CSS-кода</h1>
       </section>
 
-      <!-- Генератор -->
+<!-- Генератор -->
 <section class="main__content">
 <div class="main__content-card-list">
 
