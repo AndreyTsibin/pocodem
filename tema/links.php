@@ -30,7 +30,7 @@ setup_postdata( $post ); ?>
 
 <!-- Разметка поста -->
 <div class="searchable">
-<a class="main__content-card" href="<?php the_field('link_to_links'); ?>">
+<a class="main__content-card" href="<?php the_field('link_to_links'); ?>" target="_blank" rel="noopener noreferrer">
 
 <?php the_post_thumbnail( 
 array(306, 108),
