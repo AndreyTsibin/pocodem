@@ -153,8 +153,12 @@
                 <rect width="24" height="19" fill="white" />
               </clipPath>
             </defs>
-          </svg>
-          <span>Ссылки</span></a>
+          </svg><span>Ссылки</span></a>
+
+          <a class="menu__link" href="<?php echo home_url( 'novosti' ); ?>">
+          <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 0V19H17.8517L7.96906 7.0415H7.80269V19H3V0H7.21483L17.0198 11.9492H17.2195V0H22Z" fill="white"/>
+</svg><span>Новости</span></a>
 
         <div class="menu__contact">
           <a class="menu__contact-link" href="<?php echo home_url( 'razrabotka' ); ?>">Разработка</a>
