@@ -1,0 +1,15 @@
+.button-new {
+  /* Меняем цвет фона кнопки */
+  background-color: #515fe1;
+  /* Добавляем иконку */
+  background-image: url(https://static.tildacdn.com/tild3939-3738-4036-a432-613438383166/icons8-phone_1.svg);
+  /* Размер иконки */
+  background-size: 18px;
+  background-repeat: no-repeat;
+  /* Отступ иконки от края кнопки и от текста */
+  background-position: 30px center;
+  /* Отступ текста от иконки */
+  padding-left: 20px;
+  /* Скругление углов */
+  border-radius: 30px;
+}
